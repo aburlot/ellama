@@ -307,16 +307,15 @@ The following variables can be customized for the Ellama client:
 - ~ellama-keymap-prefix~: The keymap prefix for Ellama.
 - ~ellama-user-nick~: The user nick in logs.
 - ~ellama-assistant-nick~: The assistant nick in logs.
-- ~ellama-language~: The language for Ollama translation. Default
-language is english.
-- ~ellama-provider~: llm provider for ellama. Default provider is
-~ollama~ with [[https://ollama.ai/library/zephyr][zephyr]] model.
-There are many supported providers: ~ollama~, ~open ai~, ~vertex~,
-~GPT4All~. For more information see [[https://elpa.gnu.org/packages/llm.html][llm documentation]].
+- ~ellama-language~: The language for Ollama translation. Default language is english.
+- ~ellama-provider~: llm provider for ellama. Default provider is 
+  ~ollama~ with [[https://ollama.ai/library/zephyr][zephyr]] model.
+  There are many supported providers: ~ollama~, ~open ai~, ~vertex~,
+  ~GPT4All~. For more information see [[https://elpa.gnu.org/packages/llm.html][llm documentation]].
 - ~ellama-providers~: association list of model llm providers with
   name as key.
 - ~ellama-spinner-type~: Spinner type for ellama. Default type is
-~progress-bar~.
+  ~progress-bar~.
 - ~ellama-ollama-binary~: Path to ollama binary.
 - ~ellama-auto-scroll~: If enabled ellama buffer will scroll
   automatically during generation. Disabled by default.
@@ -324,10 +323,10 @@ There are many supported providers: ~ollama~, ~open ai~, ~vertex~,
   filling behaviour.
 - ~ellama-name-prompt-words-count~: Count of words in prompt to
   generate name.
-- Prompt templates for every command.
+- ~ellama-CMD-prompt-template~: Prompt templates for every command ~CMD~ (~ellama-code-review-prompt-template~, ~ellama-improve-wording-prompt-template~, etc.).
 - ~ellama-chat-done-callback~: Callback that will be called on ellama
-chat response generation done. It should be a function with single
-argument generated text string.
+  chat response generation done. It should be a function with single
+  argument generated text string.
 - ~ellama-nick-prefix-depth~: User and assistant nick prefix depth.
   Default value is 2.
 - ~ellama-sessions-directory~: Directory for saved ellama sessions.
